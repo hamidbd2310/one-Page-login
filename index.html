@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-conent">
+                <header>Login</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" class="password">
+                    </div>
+                    <div class="field button-field">
+                        <button>Login</button>
+                    </div>
+                    <div class="form-link">
+                        <span>New User?  <a onclick="AddStyle()">Signup</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+<!--Signup Form-->
+        <div id="signup" class="form signup">
+            <div class="form-conent">
+                <header>Signup</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" class="password">
+                    <div class="field input-field">
+                            <input type="password" placeholder="Password" class="password">
+                    </div>
+                    <div class="field button-field">
+                        <button>SignUp</button>
+                    </div>
+                    <div class="form-link">
+                        <span>Already Account  <a onclick="RemoveStyle()">Login</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+   <script>
+function AddStyle(){
+            let H1Tag=document.getElementById('signup')
+            H1Tag.classList.add('form')
+        }
+        function RemoveStyle(){
+            let H1Tag=document.getElementById('signup')
+            H1Tag.classList.remove('form')
+        }
+   </script>
+</body>
+</html>

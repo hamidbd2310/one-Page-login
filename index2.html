@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <button class="btn-primary" onclick="AddStyle()">singup</button>
+    <button onclick="RemoveStyle()">login</button>
+    <div class="form login">
+        <div class="form-conent">
+            <header>Login</header>
+            <form action="#">
+                <div class="field input-field">
+                    <input type="email" placeholder="Email" class="input">
+                </div>
+                <div class="field input-field">
+                    <input type="password" placeholder="Password" class="password">
+                </div>
+                <div class="field button-field">
+                    <button>Login</button>
+                </div>
+                <div class="form-link">
+                    <span> New User?  <a onclick="AddStyle()" href="#signup" class="signup-link">signup</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--SingUp-->
+    <div class="form signup">
+        <div class="form-conent">
+            <header>Signup</header>
+            <form action="#">
+                <div class="field input-field">
+                    <input type="email" placeholder="Email" class="input">
+                </div>
+                <div class="field input-field">
+                    <input type="password" placeholder="Password" class="password">
+                </div>
+                <div class="field button-field">
+                    <button>Signup</button>
+                </div>
+                <div class="form-link">
+                    <span>Have Account?  <a onclick="RemoveStyle()"href="#login" class="login-link">login</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+
+
+        function AddStyle(){
+                    let H1Tag=document.getElementById('signup')
+                    H1Tag.classList.add('form')
+                    
+                }
+                function AddStyle2(){
+                    let H1Tag=document.getElementById('signup')
+                    H1Tag.classList.add('bg-danger')
+                    H1Tag.classList.remove('bg-primary')
+                }
+                function RemoveStyle(){
+                    let H1Tag=document.getElementById('signup')
+                    H1Tag.classList.remove('form')
+                }
+           </script>
+</body>
+</html>

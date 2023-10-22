@@ -1,0 +1,11 @@
+.form{
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 15px 2px 15px 2px;
+    background-color: gray;
+}
+.form.signup{
+    opacity: 100;
+    pointer-events: none;}
